@@ -1,0 +1,12 @@
+data:
+  root_train: "/data/disk2/vinhnguyen/ModelArchitectures/Animals_splited/train"
+  root_valid: "/data/disk2/vinhnguyen/ModelArchitectures/Animals_splited/valid"
+  num_classes: 3
+
+model:
+  model_name: "resnet50_bn"
+  pretrained: ""
+  save_path: "/data/disk2/vinhnguyen/ModelArchitectures/weights_resnet50_bn"
+
+training:
+  epoch: 200
