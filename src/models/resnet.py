@@ -78,7 +78,6 @@ class Resnet(nn.Module):
                         ]
                     
                     in_channels = ker_nums
-                
 
                 resi_block = nn.Sequential(*layers_per_resi_block)
                 lst_resi_blocks_per_stage.append(resi_block)
