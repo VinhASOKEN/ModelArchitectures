@@ -13,8 +13,7 @@ def get_dict_label_mapping(folder_data):
         res = {}
         for class_name in os.listdir(folder_data):
             res[class_name] = count
-            count += 1
-        
+            count += 1        
         return res
 
 def print_verbose(verbose=True, *args, **kwargs): print(*args) if verbose else None
@@ -129,6 +128,8 @@ class Runner:
             print_verbose(True, f'Runing time: Epoch {epoch + 1}: {str(datetime.timedelta(seconds=int(runtime)))} | ETA: {eta}')
             print()
             print()
+
+
 
 if __name__ == '__main__':
     cfg_all = get_config()
